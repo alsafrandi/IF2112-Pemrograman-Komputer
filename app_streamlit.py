@@ -16,7 +16,7 @@ def load_data():
 def get_total_dataframe(dataset):
     total_dataframe = dataset[['Negara','Tahun','Kode Negara','Region','Sub Region','Produksi']]
     return total_dataframe
-st.header("++++++++++++ANALISA DATA PRODUKSI MINYAK DI SELURUH NEGARA++++++++++++")
+st.header("ANALISA DATA PRODUKSI MINYAK DI SELURUH NEGARA")
 st.header("")
 dataset=load_data()
 dataset_bersih = dataset[dataset['Produksi'] != 0]
